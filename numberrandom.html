@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>dado 1:
+</p>
+<p id="demo"></p>
+<script>
+
+document.getElementById("demo").innerHTML = mioRandom(6);
+for(let i=0;i<100;i++)
+{mioRandomWrite(6);}
+function mioRandom(n)
+{
+let a=0;
+a=Math.floor((Math.random()*n)+1);
+
+return a;
+}
+function mioRandomWrite(n)
+{
+let a=0;
+a=Math.floor((Math.random()*n)+1);
+
+document.write(a);
+}
+
+
+
+</script>
+
+</body>
+</html>
